@@ -1,6 +1,6 @@
 [alias]
 	lg = log --graph --oneline
-	st = status
+	st = status -bs
 [commit]
 	gpgsign = true
 [gpg]
