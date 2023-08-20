@@ -1,0 +1,12 @@
+[commit]
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = /c/rucyw/.ssh/allowed_signers
+[init]
+	defaultBranch = main
+[user]
+	email = rucywl@gamil.com
+	name = WY
+	signingkey = ssh-ed25519 ...
