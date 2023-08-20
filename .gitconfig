@@ -2,6 +2,7 @@
 	gpgsign = true
 [gpg]
 	format = ssh
+	#sign = true
 [gpg "ssh"]
 	allowedSignersFile = /c/rucyw/.ssh/allowed_signers
 [init]
@@ -9,4 +10,4 @@
 [user]
 	email = rucywl@gamil.com
 	name = WY
-	signingkey = ssh-ed25519 ...
+	signingkey = C:/Users/rucyw/.ssh/id_ed25519_github_personal
