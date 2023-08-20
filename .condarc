@@ -1,4 +1,4 @@
 channels:
-  - defaults
+  - conda-forge
 solver: libmamba
 auto_activate_base: true
