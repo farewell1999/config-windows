@@ -1,0 +1,4 @@
+channels:
+  - defaults
+solver: libmamba
+auto_activate_base: true
