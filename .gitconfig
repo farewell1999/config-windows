@@ -3,6 +3,17 @@
 	st = status -bs
 [commit]
 	gpgsign = true
+[core]
+	pager  = delta
+	editor = vim
+	#autocrlf = 
+	#excludesfile = 
+[delta]
+	side-by-side = true
+	navigate     = true
+	line-numbers = true
+	light        = false
+	pager        = cat
 [gpg]
 	format = ssh
 	#sign = true
@@ -10,6 +21,8 @@
 	allowedSignersFile = /c/rucyw/.ssh/allowed_signers
 [init]
 	defaultBranch = main
+[interactive]
+	diffFilter = delta --color-only
 [user]
 	email = 30755568+farewell1999@users.noreply.github.com
 	name = WY
