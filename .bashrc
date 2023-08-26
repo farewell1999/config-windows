@@ -5,6 +5,16 @@ alias ll='lsd -AFl '
 alias pp="echo '$PATH' | tr : '\n' "
 #alias rand='echo `jot -r 1 0 1000`/1000 | bc -1 | cut -c 1-4 '
 
+# pulls information from the following website: https://cheat.sh/
+man () {
+  if [ $# -ne 1 ]
+  then
+    echo "Usage: man <name>"
+  else
+    curl https://cheat.sh/$1
+  fi
+}
+
 # workaround to configure bash to display active conda environment in the prompt
 # not sure why conda wasn't working properly to begin with...
 source ~/anaconda3/etc/profile.d/conda.sh
