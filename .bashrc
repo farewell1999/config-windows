@@ -1,3 +1,9 @@
+alias cat='bat -p --pager=none'
+alias findbig='find . -type f -size +1000 -exec ls -lh {} \;'
+alias ll='ls -al'
+alias path="echo $PATH | tr : '\n'"
+alias rand='echo `jot -r 1 0 1000`/1000 | bc -1 | cut -c 1-4'
+
 # workaround to configure bash to display active conda environment in the prompt
 # not sure why conda wasn't working properly to begin with...
 source ~/anaconda3/etc/profile.d/conda.sh
